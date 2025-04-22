@@ -2,7 +2,6 @@
 
 <div align="center">
 
-<!-- Affiche le logo avec une largeur de 200px -->
 <img src="docs/logo.png" alt="TaskAI Logo" width="150px" />
 
 **Generate structured task backlogs for AI agents and automation workflows**
