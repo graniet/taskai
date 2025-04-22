@@ -1,0 +1,26 @@
+[package]
+name = "taskai"
+version = "0.1.0"
+edition = "2021"
+description = "Generate structured task backlogs from natural language for AI agents and automation"
+authors = ["Tristan Granier <graniet75@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/graniet/taskai"
+keywords = ["ai", "agent", "backlog", "task", "generator"]
+categories = ["command-line-utilities", "development-tools"]
+readme = "../../README.md"
+
+# This makes the binary installable via 'cargo install taskai'
+[[bin]]
+name = "taskai"
+path = "src/main.rs"
+
+[dependencies]
+taskai-core = { path = "../core", version = "0.1.0" }
+taskai-schema = { path = "../schema", version = "0.1.0" }
+clap = { workspace = true, features = ["derive"] }
+serde_yaml = { workspace = true }
+tokio = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3.8"

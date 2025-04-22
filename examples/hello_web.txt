@@ -1,0 +1,1 @@
+Je veux créer une API en Rust qui affiche "Hello World".

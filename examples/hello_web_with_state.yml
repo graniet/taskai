@@ -1,0 +1,18 @@
+project: hello-web
+rust_version: "1.77"
+epics:
+  - id: HW-E0
+    title: "Minimal HTTP server"
+    tasks:
+      - id: HW-0
+        title: "Initialise Cargo workspace"
+        depends: []
+        state: Done
+        deliverable: [Cargo.toml, src/main.rs]
+        done_when: [cargo build succeeds]
+      - id: HW-1
+        title: "Implement '/' endpoint returning Hello World"
+        depends: [HW-0]
+        state: Todo
+        deliverable: [src/main.rs]
+        done_when: [curl localhost returns JSON]
