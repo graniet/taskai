@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![TaskAI Logo](https://via.placeholder.com/150?text=TaskAI)  
+<!-- Affiche le logo avec une largeur de 200px -->
+<img src="docs/logo.png" alt="TaskAI Logo" width="150px" />
 
 **Generate structured task backlogs for AI agents and automation workflows**
 
@@ -97,25 +98,6 @@ W-1: Setup project structure
     - README.md
     - requirements.txt
 ```
-
-### 3. Mark Tasks as Complete
-
-Update task state as work progresses:
-
-```bash
-taskai mark-done weather_tasks.yml --task W-1
-```
-
-This updates the state and allows dependent tasks to become ready.
-
-## 🔧 Using with AI Agents
-
-TaskAI is designed to create backlogs that can be consumed by AI agents:
-
-1. **Agent Orchestration**: Generate task sequences for multi-agent workflows
-2. **Sequential Execution**: Agents can process the dependencies to determine execution order
-3. **Verification Logic**: The `done_when` criteria provide validation checkpoints
-4. **Structured Input/Output**: The YAML format is easily parsed by most programming languages
 
 ### Using Claude with TaskAI - Simple Workflow
 
